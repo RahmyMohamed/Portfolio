@@ -202,8 +202,7 @@ body {
     color: #0ef;
 }
 .container {
-    padding: 90px;
-    padding-left: 85px;
+    padding: 150px;
     margin-top: 20px;
 }
 .services-list{
@@ -735,3 +734,4 @@ section{
     }
 
 }
+
