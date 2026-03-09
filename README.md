@@ -31,19 +31,11 @@ Building intelligent, secure digital systems at the intersection of **Web Techno
 
 ---
 
-### 📊 **GitHub Statistics**
-
-<p align="left">
-<img src="https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true&theme=tokyonight&count_private=true" alt="Mohamed Rahmy's Stats" />
-</p>
-
----
-
 ### 📫 **Connect with Me**
 
-- 💼 [LinkedIn](https://linkedin.com/in/YOUR_PROFILE)
-- 🌐 [Portfolio](https://YOUR_PORTFOLIO_LINK)
-- 📧 [Email](mailto:YOUR_EMAIL@example.com)
+- 💼 [LinkedIn](https://www.linkedin.com/in/mohamed-rahmy/)
+- 🌐 [Portfolio]([https://YOUR_PORTFOLIO_LINK](https://rahmymohamed.github.io/Portfolio/))
+- 📧 [Email](mohamedrahmi428@gmail.com)
 
 ---
 
