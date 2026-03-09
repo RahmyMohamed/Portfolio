@@ -2,29 +2,67 @@
 //  Mohamed Rahmy Portfolio — script.js
 // ============================================================
 
-// ---- Custom Cursor ----
+// ---- Custom Cursor (desktop only) ----
 const cursor = document.getElementById('cursor');
 const dot    = document.getElementById('cursorDot');
 let cx = 0, cy = 0, dx = 0, dy = 0;
 
-document.addEventListener('mousemove', e => {
-  dx = e.clientX;
-  dy = e.clientY;
-  dot.style.left = dx + 'px';
-  dot.style.top  = dy + 'px';
+if (window.matchMedia('(hover: hover)').matches) {
+  document.addEventListener('mousemove', e => {
+    dx = e.clientX;
+    dy = e.clientY;
+    dot.style.left = dx + 'px';
+    dot.style.top  = dy + 'px';
+  });
+
+  (function animCursor() {
+    cx += (dx - cx) * 0.12;
+    cy += (dy - cy) * 0.12;
+    cursor.style.left = cx + 'px';
+    cursor.style.top  = cy + 'px';
+    requestAnimationFrame(animCursor);
+  })();
+
+  document.querySelectorAll('a, button, .skill-card, .project-card, .cert-card').forEach(el => {
+    el.addEventListener('mouseenter', () => cursor.style.transform = 'translate(-50%,-50%) scale(2)');
+    el.addEventListener('mouseleave', () => cursor.style.transform = 'translate(-50%,-50%) scale(1)');
+  });
+}
+
+
+// ---- Hamburger Menu ----
+const navToggle  = document.getElementById('navToggle');
+const navMenu    = document.getElementById('navMenu');
+const navOverlay = document.getElementById('navOverlay');
+
+function openMenu() {
+  navToggle.classList.add('open');
+  navMenu.classList.add('open');
+  navOverlay.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeMenu() {
+  navToggle.classList.remove('open');
+  navMenu.classList.remove('open');
+  navOverlay.classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+navToggle.addEventListener('click', () => {
+  navMenu.classList.contains('open') ? closeMenu() : openMenu();
 });
 
-(function animCursor() {
-  cx += (dx - cx) * 0.12;
-  cy += (dy - cy) * 0.12;
-  cursor.style.left = cx + 'px';
-  cursor.style.top  = cy + 'px';
-  requestAnimationFrame(animCursor);
-})();
+navOverlay.addEventListener('click', closeMenu);
 
-document.querySelectorAll('a, button, .skill-card, .project-card, .cert-card').forEach(el => {
-  el.addEventListener('mouseenter', () => cursor.style.transform = 'translate(-50%,-50%) scale(2)');
-  el.addEventListener('mouseleave', () => cursor.style.transform = 'translate(-50%,-50%) scale(1)');
+// Close menu when a nav link is clicked
+document.querySelectorAll('.nav-link').forEach(link => {
+  link.addEventListener('click', closeMenu);
+});
+
+// Close menu on resize to desktop
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 768) closeMenu();
 });
 
 
