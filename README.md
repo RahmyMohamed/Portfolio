@@ -1,4 +1,8 @@
-# 🚀 Hi there, I'm Mohamed Rahmy! <img src="portfolio.png" width="30">
+
+# 🚀 Hi there, I'm Mohamed Rahmy! 
+![preview img](portfolio.png)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Build Status](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/)
 
 ### **Full-Stack Developer | AI Enthusiast | Cybersecurity Specialist**
 
