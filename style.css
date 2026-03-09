@@ -20,9 +20,22 @@ body {
   overflow-x: hidden;
 }
 
-/* Desktop only: hide system cursor */
+/* Desktop only: Hide system cursor */
 @media (hover: hover) and (pointer: fine) {
   body { cursor: none; }
+}
+
+/* Touch/mobile: force all interactive elements to be tappable */
+@media (hover: none), (pointer: coarse) {
+  body { cursor: auto !important; }
+  .cursor, .cursor-dot { display: none !important; }
+  a, button, .btn-primary, .btn-secondary, .form-submit,
+  .proj-link, .contact-link, .nav-link, .nav-toggle,
+  .skill-card, .project-card, .cert-card {
+    cursor: pointer !important;
+    -webkit-tap-highlight-color: rgba(0,245,255,0.15);
+    touch-action: manipulation;
+  }
 }
 
 /* ===================== CURSOR (desktop only) ===================== */
@@ -46,9 +59,9 @@ body {
   z-index: 9999;
   transform: translate(-50%, -50%);
 }
-@media (hover: none), (pointer: coarse) {
-  .cursor, .cursor-dot { display: none !important; }
-  body { cursor: auto !important; }
+@media (hover: none) {
+  .cursor, .cursor-dot { display: none; }
+  body { cursor: auto; }
 }
 
 /* ===================== CANVAS ===================== */
@@ -174,7 +187,7 @@ nav ul a:hover::after { width: 100%; }
   width: 100%;
 }
 
-.hero-text { z-index: 10; }
+.hero-text { z-index: 2; }
 
 .status-badge {
   display: inline-flex;
@@ -254,7 +267,6 @@ nav ul a:hover::after { width: 100%; }
   overflow: hidden;
   transition: color 0.3s;
   clip-path: polygon(10px 0%, 100% 0%, calc(100% - 10px) 100%, 0% 100%);
-  touch-action: manipulation;
 }
 .btn-primary::before { content: ''; position: absolute; inset: 0; background: var(--cyan); transform: translateX(-100%); transition: transform 0.3s; }
 .btn-primary:hover::before { transform: translateX(0); }
@@ -273,19 +285,8 @@ nav ul a:hover::after { width: 100%; }
   cursor: pointer;
   transition: all 0.3s;
   clip-path: polygon(10px 0%, 100% 0%, calc(100% - 10px) 100%, 0% 100%);
-  touch-action: manipulation;
 }
 .btn-secondary:hover { background: var(--green); color: var(--dark); }
-/* ===================== TOUCH FIX - ALL DEVICES ===================== */
-a, button, input, textarea, select,
-.btn-primary, .btn-secondary, .form-submit,
-.nav-toggle, .nav-link, .proj-link, .contact-link {
-  touch-action: manipulation;
-  -webkit-tap-highlight-color: rgba(0,245,255,0.2);
-  position: relative;
-  z-index: 10;
-}
-
 
 /* ===================== PROFILE CARD ===================== */
 .hero-visual {
@@ -386,7 +387,7 @@ a, button, input, textarea, select,
 /* ===================== SECTIONS ===================== */
 section {
   position: relative;
-  z-index: 5;
+  z-index: 2;
   padding: 6rem 8%;
 }
 .section-header {
@@ -606,9 +607,8 @@ footer {
     gap: 2.5rem;
     z-index: 199;
     transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    pointer-events: none;
   }
-  nav ul.open { right: 0; pointer-events: auto; }
+  nav ul.open { right: 0; }
   nav ul a { font-size: 1rem; letter-spacing: 3px; }
   .nav-toggle { display: flex; }
   .nav-overlay { display: block; }
@@ -693,12 +693,4 @@ footer {
   .form-input { font-size: 0.78rem; padding: 0.75rem 0.8rem; }
   .terminal-box { font-size: 0.72rem; padding: 1.2rem; }
   .terminal-header span { display: none; }
-}
-
-/* ===== GLOBAL TOUCH FIX ===== */
-a, button, input, textarea, .btn-primary, .btn-secondary,
-.form-submit, .proj-link, .contact-link, .skill-card,
-.project-card, .cert-card, .nav-link {
-  touch-action: manipulation;
-  -webkit-tap-highlight-color: rgba(0,245,255,0.1);
 }
