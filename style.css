@@ -20,7 +20,7 @@ body {
   overflow-x: hidden;
 }
 
-/* Desktop only: hide system cursor */
+/* Desktop only: Hide system cursor */
 @media (hover: hover) and (pointer: fine) {
   body { cursor: none; }
 }
