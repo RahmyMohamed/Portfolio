@@ -18,15 +18,21 @@
 <canvas id="matrix-canvas"></canvas>
 
 <!-- ===================== NAV ===================== -->
+<div class="nav-overlay" id="navOverlay"></div>
 <nav>
   <div class="logo">MR<span>.</span>DEV</div>
-  <ul>
-    <li><a href="#about">About</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#certificates">Certs</a></li>
-    <li><a href="#contact">Contact</a></li>
+  <ul id="navMenu">
+    <li><a href="#about" class="nav-link">About</a></li>
+    <li><a href="#skills" class="nav-link">Skills</a></li>
+    <li><a href="#projects" class="nav-link">Projects</a></li>
+    <li><a href="#certificates" class="nav-link">Certs</a></li>
+    <li><a href="#contact" class="nav-link">Contact</a></li>
   </ul>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
 </nav>
 
 <!-- ===================== HERO ===================== -->
@@ -64,15 +70,7 @@
         <div class="scan-line"></div>
 
         <div class="profile-img-wrap">
-          <!-- Replace with your actual photo: <img src="your-photo.jpg" alt="Mohamed Rahmy"> -->
-          <div class="profile-placeholder">
-            <img src="profil.06.png" alt="Profile">
-              <circle cx="50" cy="35" r="20" stroke="#00f5ff" stroke-width="1.5"/>
-              <path d="M10 90 Q50 60 90 90" stroke="#00f5ff" stroke-width="1.5" fill="none"/>
-              <circle cx="50" cy="35" r="30" stroke="#00f5ff" stroke-width="0.5" stroke-dasharray="4 4" opacity="0.4"/>
-            </svg>
-            <span>[ PHOTO.JPG ]</span>
-          </div>
+          <img src="profil_06.png" alt="Mohamed Rahmy">
         </div>
         <div class="profile-tag">AUTHORIZED_USER :: MR</div>
 
@@ -349,11 +347,11 @@
       <h3>LET'S BUILD SOMETHING.</h3>
       <p>Whether you have a project in mind, want to collaborate, or just want to talk tech — my inbox is always open. Let's create something remarkable together.</p>
       <div class="contact-links">
-        <a href="mailto:rahmy@example.com" class="contact-link">
+        <a href="mailto:mohamedrahmy@email.com" class="contact-link">
           <div class="contact-link-icon">✉</div>
           <div class="contact-link-info">
             <div class="contact-link-label">EMAIL</div>
-            <div class="contact-link-value">rahmy@example.com</div>
+            <div class="contact-link-value">mohamedrahmy@email.com</div>
           </div>
         </a>
         <a href="https://github.com/" target="_blank" class="contact-link">
@@ -394,7 +392,7 @@
 <!-- ===================== FOOTER ===================== -->
 <footer>
   <span>© 2025 MOHAMED RAHMY — ALL SYSTEMS OPERATIONAL</span>
-  <span>BUILT WITH HTML · CSS · JS</span>
+  <span>BUILT WITH ⚡ & ☕</span>
 </footer>
 
 <script src="script.js"></script>
