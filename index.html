@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mohamed Rahmy | Full-Stack Developer · AI · Cybersecurity</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Custom Cursor -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-dot" id="cursorDot"></div>
+
+<!-- Matrix Canvas -->
+<canvas id="matrix-canvas"></canvas>
+
+<!-- ===================== NAV ===================== -->
+<nav>
+  <div class="logo">MR<span>.</span>DEV</div>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#certificates">Certs</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ===================== HERO ===================== -->
+<section id="hero">
+  <div class="hero-grid">
+    <div class="hero-text">
+      <div class="status-badge">
+        <span class="status-dot"></span>
+        AVAILABLE FOR WORK
+      </div>
+      <h1 class="hero-name">
+        Mohamed
+        <span class="highlight">Rahmy</span>
+      </h1>
+      <p class="hero-tagline">// FULL-STACK · AI · CYBERSECURITY</p>
+      <p class="hero-desc">
+        Building intelligent, secure digital systems at the intersection of
+        <strong style="color:var(--cyan)">web technology</strong>,
+        <strong style="color:var(--green)">artificial intelligence</strong>, and
+        <strong style="color:var(--red)">cybersecurity</strong>.
+        Turning complex problems into elegant, scalable solutions.
+      </p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn-primary">View Projects</a>
+        <a href="#contact" class="btn-secondary">Contact Me</a>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="profile-frame">
+        <div class="corner-tl"></div>
+        <div class="corner-tr"></div>
+        <div class="corner-bl"></div>
+        <div class="corner-br"></div>
+        <div class="scan-line"></div>
+
+        <div class="profile-img-wrap">
+          <!-- Replace with your actual photo: <img src="your-photo.jpg" alt="Mohamed Rahmy"> -->
+          <div class="profile-placeholder">
+            <img src="profil.06.png" alt="Profile">
+              <circle cx="50" cy="35" r="20" stroke="#00f5ff" stroke-width="1.5"/>
+              <path d="M10 90 Q50 60 90 90" stroke="#00f5ff" stroke-width="1.5" fill="none"/>
+              <circle cx="50" cy="35" r="30" stroke="#00f5ff" stroke-width="0.5" stroke-dasharray="4 4" opacity="0.4"/>
+            </svg>
+            <span>[ PHOTO.JPG ]</span>
+          </div>
+        </div>
+        <div class="profile-tag">AUTHORIZED_USER :: MR</div>
+
+        <div class="float-stat stat-1">
+          <span class="num">3+</span>
+          <span class="lbl">YEARS EXP</span>
+        </div>
+        <div class="float-stat stat-2">
+          <span class="num">20+</span>
+          <span class="lbl">PROJECTS</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ABOUT ===================== -->
+<section id="about">
+  <div class="section-header">
+    <span class="section-num">01</span>
+    <h2 class="section-title">About <span>Me</span></h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="about-grid">
+    <div class="about-text fade-in">
+      <p>I'm <strong>Mohamed Rahmy</strong>, a passionate developer currently mastering the trinity of modern tech —
+        <strong>Full-Stack Development</strong>, <strong>Artificial Intelligence</strong>, and <strong>Cybersecurity</strong>.
+      </p>
+      <p>My journey began with a curiosity for how things work beneath the surface. Today, I build full-stack applications,
+        design AI-powered systems, and research security vulnerabilities to create safer digital environments.
+      </p>
+      <p>I believe the future belongs to developers who understand the complete stack — from frontend pixels to backend
+        infrastructure, from ML models to attack vectors. That's the developer I'm becoming.
+      </p>
+    </div>
+    <div class="terminal-box fade-in">
+      <div class="terminal-header">
+        <div class="t-dot r"></div>
+        <div class="t-dot y"></div>
+        <div class="t-dot g"></div>
+        <span>rahmy@portfolio:~</span>
+      </div>
+      <div class="t-line"><span class="t-prompt">$ </span><span class="t-cmd">cat profile.json</span></div>
+      <div class="t-line t-out">{</div>
+      <div class="t-line t-out">&nbsp;&nbsp;<span class="t-key">"name"</span>: <span class="t-val">"Mohamed Rahmy"</span>,</div>
+      <div class="t-line t-out">&nbsp;&nbsp;<span class="t-key">"role"</span>: <span class="t-val">"Full-Stack Developer"</span>,</div>
+      <div class="t-line t-out">&nbsp;&nbsp;<span class="t-key">"learning"</span>: [<span class="t-val">"AI"</span>, <span class="t-val">"Cybersecurity"</span>],</div>
+      <div class="t-line t-out">&nbsp;&nbsp;<span class="t-key">"status"</span>: <span class="t-val">"building_cool_things"</span>,</div>
+      <div class="t-line t-out">&nbsp;&nbsp;<span class="t-key">"coffee_per_day"</span>: <span class="t-val">∞</span></div>
+      <div class="t-line t-out">}</div>
+      <div class="t-line" style="margin-top:0.8rem"><span class="t-prompt">$ </span><span class="blink"></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SKILLS ===================== -->
+<section id="skills" style="background: rgba(0,245,255,0.01);">
+  <div class="section-header">
+    <span class="section-num">02</span>
+    <h2 class="section-title">Tech <span>Arsenal</span></h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="skills-grid">
+
+    <div class="skill-card fade-in">
+      <span class="skill-icon">⚡</span>
+      <div class="skill-cat">FULL-STACK</div>
+      <div class="skill-items">
+        <span class="skill-tag">HTML5</span><span class="skill-tag">CSS3</span>
+        <span class="skill-tag">JavaScript</span><span class="skill-tag">React</span>
+        <span class="skill-tag">Node.js</span><span class="skill-tag">Python</span>
+        <span class="skill-tag">MongoDB</span><span class="skill-tag">PostgreSQL</span>
+        <span class="skill-tag">REST APIs</span>
+      </div>
+      <div class="skill-bars">
+        <div class="skill-bar-item">
+          <div class="skill-bar-header"><span class="skill-bar-name">Frontend</span><span class="skill-bar-pct">85%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" style="width:85%"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-header"><span class="skill-bar-name">Backend</span><span class="skill-bar-pct">78%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" style="width:78%"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="skill-card fade-in">
+      <span class="skill-icon">🤖</span>
+      <div class="skill-cat">ARTIFICIAL INTELLIGENCE</div>
+      <div class="skill-items">
+        <span class="skill-tag">Machine Learning</span><span class="skill-tag">TensorFlow</span>
+        <span class="skill-tag">PyTorch</span><span class="skill-tag">NLP</span>
+        <span class="skill-tag">Computer Vision</span><span class="skill-tag">LLMs</span>
+        <span class="skill-tag">Data Science</span><span class="skill-tag">Pandas</span>
+        <span class="skill-tag">NumPy</span>
+      </div>
+      <div class="skill-bars">
+        <div class="skill-bar-item">
+          <div class="skill-bar-header"><span class="skill-bar-name">ML / DL</span><span class="skill-bar-pct">70%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" style="width:70%"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-header"><span class="skill-bar-name">Data Science</span><span class="skill-bar-pct">75%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" style="width:75%"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="skill-card fade-in">
+      <span class="skill-icon">🛡️</span>
+      <div class="skill-cat">CYBERSECURITY</div>
+      <div class="skill-items">
+        <span class="skill-tag">Ethical Hacking</span><span class="skill-tag">Penetration Testing</span>
+        <span class="skill-tag">OWASP</span><span class="skill-tag">Linux</span>
+        <span class="skill-tag">Kali Linux</span><span class="skill-tag">Nmap</span>
+        <span class="skill-tag">Wireshark</span><span class="skill-tag">CTF</span>
+        <span class="skill-tag">Network Security</span>
+      </div>
+      <div class="skill-bars">
+        <div class="skill-bar-item">
+          <div class="skill-bar-header"><span class="skill-bar-name">Pen Testing</span><span class="skill-bar-pct">65%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" style="width:65%"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-header"><span class="skill-bar-name">Security Tools</span><span class="skill-bar-pct">72%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" style="width:72%"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PROJECTS ===================== -->
+<section id="projects">
+  <div class="section-header">
+    <span class="section-num">03</span>
+    <h2 class="section-title">Featured <span>Projects</span></h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="projects-grid">
+
+    <div class="project-card fade-in">
+      <div class="proj-num">PROJECT_01</div>
+      <div class="proj-title">AI-Powered Threat Detection System</div>
+      <p class="proj-desc">Real-time network anomaly detection using ML models. Identifies suspicious patterns with 94% accuracy.</p>
+      <div class="proj-tags"><span class="proj-tag">Python</span><span class="proj-tag">TensorFlow</span><span class="proj-tag">Flask</span><span class="proj-tag">Security</span></div>
+      <a href="#" class="proj-link">VIEW PROJECT →</a>
+    </div>
+
+    <div class="project-card fade-in">
+      <div class="proj-num">PROJECT_02</div>
+      <div class="proj-title">Full-Stack E-Commerce Platform</div>
+      <p class="proj-desc">Scalable MERN stack e-commerce app with real-time inventory, payment integration, and analytics dashboard.</p>
+      <div class="proj-tags"><span class="proj-tag">React</span><span class="proj-tag">Node.js</span><span class="proj-tag">MongoDB</span><span class="proj-tag">Stripe</span></div>
+      <a href="#" class="proj-link">VIEW PROJECT →</a>
+    </div>
+
+    <div class="project-card fade-in">
+      <div class="proj-num">PROJECT_03</div>
+      <div class="proj-title">NLP Chatbot with RAG Architecture</div>
+      <p class="proj-desc">Intelligent conversational AI using Retrieval-Augmented Generation connected to custom knowledge bases.</p>
+      <div class="proj-tags"><span class="proj-tag">LangChain</span><span class="proj-tag">OpenAI API</span><span class="proj-tag">FastAPI</span><span class="proj-tag">React</span></div>
+      <a href="#" class="proj-link">VIEW PROJECT →</a>
+    </div>
+
+    <div class="project-card fade-in">
+      <div class="proj-num">PROJECT_04</div>
+      <div class="proj-title">Vulnerability Scanner Tool</div>
+      <p class="proj-desc">Automated web app scanner checking OWASP Top 10 issues and generating detailed security reports.</p>
+      <div class="proj-tags"><span class="proj-tag">Python</span><span class="proj-tag">OWASP</span><span class="proj-tag">Selenium</span><span class="proj-tag">CLI</span></div>
+      <a href="#" class="proj-link">VIEW PROJECT →</a>
+    </div>
+
+    <div class="project-card fade-in">
+      <div class="proj-num">PROJECT_05</div>
+      <div class="proj-title">Real-Time Chat Application</div>
+      <p class="proj-desc">End-to-end encrypted messaging platform with WebSocket support, file sharing, and group chat rooms.</p>
+      <div class="proj-tags"><span class="proj-tag">Socket.io</span><span class="proj-tag">React</span><span class="proj-tag">Node.js</span><span class="proj-tag">Encryption</span></div>
+      <a href="#" class="proj-link">VIEW PROJECT →</a>
+    </div>
+
+    <div class="project-card fade-in">
+      <div class="proj-num">PROJECT_06</div>
+      <div class="proj-title">Computer Vision Face Auth System</div>
+      <p class="proj-desc">Biometric authentication using deep learning facial recognition with liveness detection anti-spoofing.</p>
+      <div class="proj-tags"><span class="proj-tag">OpenCV</span><span class="proj-tag">PyTorch</span><span class="proj-tag">FastAPI</span><span class="proj-tag">React</span></div>
+      <a href="#" class="proj-link">VIEW PROJECT →</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===================== CERTIFICATES ===================== -->
+<section id="certificates" style="background: rgba(0,245,255,0.01);">
+  <div class="section-header">
+    <span class="section-num">04</span>
+    <h2 class="section-title">Certifi<span>cations</span></h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="certs-grid">
+
+    <div class="cert-card fade-in">
+      <div class="cert-badge">🛡️</div>
+      <div class="cert-info">
+        <div class="cert-name">Google Cybersecurity Professional Certificate</div>
+        <div class="cert-issuer">GOOGLE · COURSERA</div>
+        <div class="cert-year">2024</div>
+        <div class="cert-badge-verify">✓ VERIFIED</div>
+      </div>
+    </div>
+
+    <div class="cert-card fade-in">
+      <div class="cert-badge">🤖</div>
+      <div class="cert-info">
+        <div class="cert-name">Machine Learning Specialization</div>
+        <div class="cert-issuer">ANDREW NG · DEEPLEARNING.AI</div>
+        <div class="cert-year">2024</div>
+        <div class="cert-badge-verify">✓ VERIFIED</div>
+      </div>
+    </div>
+
+    <div class="cert-card fade-in">
+      <div class="cert-badge">⚡</div>
+      <div class="cert-info">
+        <div class="cert-name">Full-Stack Web Development Bootcamp</div>
+        <div class="cert-issuer">UDEMY · DR. ANGELA YU</div>
+        <div class="cert-year">2023</div>
+        <div class="cert-badge-verify">✓ VERIFIED</div>
+      </div>
+    </div>
+
+    <div class="cert-card fade-in">
+      <div class="cert-badge">🔐</div>
+      <div class="cert-info">
+        <div class="cert-name">Ethical Hacking & Penetration Testing</div>
+        <div class="cert-issuer">EC-COUNCIL · CEH</div>
+        <div class="cert-year">2024</div>
+        <div class="cert-badge-verify">✓ VERIFIED</div>
+      </div>
+    </div>
+
+    <div class="cert-card fade-in">
+      <div class="cert-badge">🧠</div>
+      <div class="cert-info">
+        <div class="cert-name">Deep Learning Specialization</div>
+        <div class="cert-issuer">DEEPLEARNING.AI · COURSERA</div>
+        <div class="cert-year">2024</div>
+        <div class="cert-badge-verify">✓ VERIFIED</div>
+      </div>
+    </div>
+
+    <div class="cert-card fade-in">
+      <div class="cert-badge">☁️</div>
+      <div class="cert-info">
+        <div class="cert-name">AWS Cloud Practitioner Essentials</div>
+        <div class="cert-issuer">AMAZON WEB SERVICES</div>
+        <div class="cert-year">2024</div>
+        <div class="cert-badge-verify">✓ VERIFIED</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===================== CONTACT ===================== -->
+<section id="contact">
+  <div class="section-header">
+    <span class="section-num">05</span>
+    <h2 class="section-title">Get In <span>Touch</span></h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="contact-wrap">
+    <div class="contact-info fade-in">
+      <h3>LET'S BUILD SOMETHING.</h3>
+      <p>Whether you have a project in mind, want to collaborate, or just want to talk tech — my inbox is always open. Let's create something remarkable together.</p>
+      <div class="contact-links">
+        <a href="mailto:rahmy@example.com" class="contact-link">
+          <div class="contact-link-icon">✉</div>
+          <div class="contact-link-info">
+            <div class="contact-link-label">EMAIL</div>
+            <div class="contact-link-value">rahmy@example.com</div>
+          </div>
+        </a>
+        <a href="https://github.com/" target="_blank" class="contact-link">
+          <div class="contact-link-icon">⌨</div>
+          <div class="contact-link-info">
+            <div class="contact-link-label">GITHUB</div>
+            <div class="contact-link-value">github.com/mohamedrahmy</div>
+          </div>
+        </a>
+        <a href="https://linkedin.com/" target="_blank" class="contact-link">
+          <div class="contact-link-icon">🔗</div>
+          <div class="contact-link-info">
+            <div class="contact-link-label">LINKEDIN</div>
+            <div class="contact-link-value">linkedin.com/in/mohamedrahmy</div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="contact-form fade-in">
+      <div class="form-group">
+        <label class="form-label">// YOUR NAME</label>
+        <input type="text" class="form-input" placeholder="Enter your name">
+      </div>
+      <div class="form-group">
+        <label class="form-label">// EMAIL ADDRESS</label>
+        <input type="email" class="form-input" placeholder="Enter your email">
+      </div>
+      <div class="form-group">
+        <label class="form-label">// MESSAGE</label>
+        <textarea class="form-input" placeholder="Your message..."></textarea>
+      </div>
+      <button class="form-submit"><span>TRANSMIT MESSAGE →</span></button>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer>
+  <span>© 2025 MOHAMED RAHMY — ALL SYSTEMS OPERATIONAL</span>
+  <span>BUILT WITH HTML · CSS · JS</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
