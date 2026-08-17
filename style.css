@@ -378,8 +378,8 @@ nav ul a:hover::after { width: 100%; }
 }
 .float-stat .num { font-size: 1.4rem; color: var(--cyan); font-weight: bold; display: block; }
 .float-stat .lbl { font-size: 0.65rem; color: var(--text); letter-spacing: 2px; opacity: 0.7; }
-.stat-1 { top: 0; left: -30px; animation: floatY 4s ease-in-out infinite; }
-.stat-2 { bottom: 40px; right: -30px; animation: floatY 4s ease-in-out infinite 2s; }
+.stat-1 { top: 55px; left: -30px; animation: floatY 4s ease-in-out infinite; }
+.stat-2 { bottom: 25px; right: -30px; animation: floatY 4s ease-in-out infinite 2s; }
 @keyframes floatY { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
 
 /* ===================== SECTIONS ===================== */
