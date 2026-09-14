@@ -175,8 +175,9 @@ nav ul a:hover::after { width: 100%; }
   z-index: 198;
   opacity: 0;
   transition: opacity 0.3s;
+  pointer-events: none;
 }
-.nav-overlay.open { opacity: 1; }
+.nav-overlay.open { opacity: 1; pointer-events: auto; }
 
 /* ===================== HERO ===================== */
 #hero {
