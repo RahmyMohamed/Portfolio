@@ -1,4 +1,4 @@
-const CACHE_NAME = 'rahmy-portfolio-v1';
+const CACHE_NAME = 'rahmy-portfolio-v2';
 const SCOPE = self.registration.scope.replace(/\/$/, '');
 const ASSETS = [
   './',

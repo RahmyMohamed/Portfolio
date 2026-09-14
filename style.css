@@ -730,11 +730,18 @@ footer {
     align-items: center;
     gap: 2.5rem;
     z-index: 199;
-    transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1), visibility 0s 0.4s;
     padding-bottom: env(safe-area-inset-bottom, 0px);
     -webkit-overflow-scrolling: touch;
+    visibility: hidden;
+    pointer-events: none;
   }
-  nav ul.open { right: 0; }
+  nav ul.open {
+    right: 0;
+    visibility: visible;
+    pointer-events: auto;
+    transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
   nav ul a {
     font-size: 1rem;
     letter-spacing: 3px;
