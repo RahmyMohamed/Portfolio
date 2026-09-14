@@ -2,9 +2,21 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<meta name="theme-color" content="#00f5ff">
+<meta name="description" content="Mohamed Rahmy - Full-Stack Developer, AI, and Cybersecurity Portfolio">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Rahmy Portfolio">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="color-scheme" content="dark">
+<link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="manifest" href="manifest.json">
 <title>Mohamed Rahmy | Full-Stack Developer · AI · Cybersecurity</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
@@ -28,7 +40,7 @@
     <li><a href="#certificates" class="nav-link">Certs</a></li>
     <li><a href="#contact" class="nav-link">Contact</a></li>
   </ul>
-  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navMenu">
     <span></span>
     <span></span>
     <span></span>
@@ -70,7 +82,7 @@
         <div class="scan-line"></div>
 
         <div class="profile-img-wrap">
-          <img src="profil.06.png" alt="Mohamed Rahmy">
+          <img src="profil.06.png" alt="Mohamed Rahmy" loading="eager" fetchpriority="high">
         </div>
         <div class="profile-tag">AUTHORIZED_USER</div>
 
@@ -272,7 +284,7 @@
 
   <div class="cert-card fade-in">
     <div class="cert-badge">
-    <img src="Images/MS.png" alt="Mars Tech" class="badge-img">
+    <img src="Images/MS.png" alt="Mars Tech" class="badge-img" loading="lazy">
   </div>
       <div class="cert-info">
         <div class="cert-name">Artificial Intelligence and Robotics</div>
@@ -281,13 +293,13 @@
         <div class="cert-badge-verify">✓ VERIFIED</div>
       </div>
       <div class="cert-img-slider">
-      <img src="Images/ai.png" alt="Artificial Intelligence and Robotics" class="cert-img">
+      <img src="Images/ai.png" alt="Artificial Intelligence and Robotics" class="cert-img" loading="lazy">
     </div>
     </div>
 
     <div class="cert-card fade-in">
       <div class="cert-badge">
-    <img src=Images/ethical-hacker.png alt="Cisco Badge" class="badge-img">
+    <img src=Images/ethical-hacker.png alt="Cisco Badge" class="badge-img" loading="lazy">
   </div>
       <div class="cert-info">
         <div class="cert-name">Ethical Hacker</div>
@@ -296,13 +308,13 @@
         <div class="cert-badge-verify">✓ VERIFIED</div>
       </div>
       <div class="cert-img-slider">
-      <img src="Images/EH.png" alt="Ethical Hacker" class="cert-img">
+      <img src="Images/EH.png" alt="Ethical Hacker" class="cert-img" loading="lazy">
     </div>
     </div>
 
     <div class="cert-card fade-in">
       <div class="cert-badge">
-    <img src=Images/JCA.jpeg alt="Cisco Badge" class="badge-img">
+    <img src=Images/JCA.jpeg alt="Cisco Badge" class="badge-img" loading="lazy">
   </div>
       <div class="cert-info">
         <div class="cert-name">Junior Cybersecurity Analyst</div>
@@ -311,13 +323,13 @@
         <div class="cert-badge-verify">✓ VERIFIED</div>
       </div>
       <div class="cert-img-slider">
-      <img src="Images/JCA_ceti.png" alt="Junior Cybersecurity Analyst" class="cert-img">
+      <img src="Images/JCA_ceti.png" alt="Junior Cybersecurity Analyst" class="cert-img" loading="lazy">
     </div>
     </div>
 
     <div class="cert-card fade-in">
       <div class="cert-badge">
-    <img src=Images/ND.jpeg alt="Cisco Badge" class="badge-img">
+    <img src=Images/ND.jpeg alt="Cisco Badge" class="badge-img" loading="lazy">
   </div>
       <div class="cert-info">
         <div class="cert-name">Network Defence</div>
@@ -326,13 +338,13 @@
         <div class="cert-badge-verify">✓ VERIFIED</div>
       </div>
       <div class="cert-img-slider">
-      <img src="Images/NDC-Certi.png" alt="Network Defence" class="cert-img">
+      <img src="Images/NDC-Certi.png" alt="Network Defence" class="cert-img" loading="lazy">
     </div>
     </div>
 
     <div class="cert-card fade-in">
       <div class="cert-badge">
-    <img src=Images/DAE.jpeg alt="Cisco Badge" class="badge-img">
+    <img src=Images/DAE.jpeg alt="Cisco Badge" class="badge-img" loading="lazy">
   </div>
       <div class="cert-info">
         <div class="cert-name">Data Analytics Essentials</div>
@@ -341,13 +353,13 @@
         <div class="cert-badge-verify">✓ VERIFIED</div>
       </div>
       <div class="cert-img-slider">
-      <img src="Images/DAEC.png" alt="Data Analytics Essentials" class="cert-img">
+      <img src="Images/DAEC.png" alt="Data Analytics Essentials" class="cert-img" loading="lazy">
     </div>
     </div>
 
     <div class="cert-card fade-in">
         <div class="cert-badge">
-    <img src=Images/codl.png alt="codl Badge" class="badge-img">
+    <img src=Images/codl.png alt="codl Badge" class="badge-img" loading="lazy">
   </div>
       <div class="cert-info">
         <div class="cert-name">Web Design for Beginners</div>
@@ -356,13 +368,13 @@
         <div class="cert-badge-verify">✓ VERIFIED</div>
       </div>
       <div class="cert-img-slider">
-      <img src="Images/UOM.png" alt="Web Design for Beginners" class="cert-img">
+      <img src="Images/UOM.png" alt="Web Design for Beginners" class="cert-img" loading="lazy">
     </div>
     </div>
 
     <div class="cert-card fade-in">
       <div class="cert-badge">
-    <img src=Images/MS.png alt="Mars tech Badge" class="badge-img">
+    <img src=Images/MS.png alt="Mars tech Badge" class="badge-img" loading="lazy">
   </div>
       <div class="cert-info">
         <div class="cert-name">Ethical Hacking</div>
@@ -371,13 +383,13 @@
         <div class="cert-badge-verify">✓ VERIFIED</div>
       </div>
       <div class="cert-img-slider">
-      <img src="Images/E-H.png" alt="Web Design for Beginners" class="cert-img">
+      <img src="Images/E-H.png" alt="Web Design for Beginners" class="cert-img" loading="lazy">
     </div>
     </div>
 
     <div class="cert-card fade-in">
       <div class="cert-badge">
-    <img src=Images/ACE.jpeg alt="ACE Badge" class="badge-img">
+    <img src=Images/ACE.jpeg alt="ACE Badge" class="badge-img" loading="lazy">
   </div>
       <div class="cert-info">
         <div class="cert-name">Multicloud Network Associate</div>
@@ -386,13 +398,13 @@
         <div class="cert-badge-verify">✓ VERIFIED</div>
       </div>
       <div class="cert-img-slider">
-      <img src="Images/Avia.png" alt="Web Design for Beginners" class="cert-img">
+      <img src="Images/Avia.png" alt="Web Design for Beginners" class="cert-img" loading="lazy">
     </div>
     </div>
 
     <div class="cert-card fade-in">
       <div class="cert-badge">
-    <img src=Images/SL.png alt="SL Badge" class="badge-img">
+    <img src=Images/SL.png alt="SL Badge" class="badge-img" loading="lazy">
   </div>
       <div class="cert-info">
         <div class="cert-name">Encoder-Decoder Architecture</div>
@@ -401,7 +413,7 @@
         <div class="cert-badge-verify">✓ VERIFIED</div>
       </div>
       <div class="cert-img-slider">
-      <img src="Images/EDA.png" alt="Web Design for Beginners" class="cert-img">
+      <img src="Images/EDA.png" alt="Web Design for Beginners" class="cert-img" loading="lazy">
     </div>
     </div>
   </div>
